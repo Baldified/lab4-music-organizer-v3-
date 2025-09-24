@@ -150,8 +150,11 @@ public class MusicOrganizer
                 System.out.println(filename);
             }
             else {
-                System.out.println("No matching file names found.");
+                if(filename.contains(searchString) != true) {
+                    System.out.println("No matching file names found.");
+                }
             }
         }
+        }
     }
-}
+
