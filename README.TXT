@@ -21,19 +21,10 @@ method prints a list of the collection.
 ANSWERS
 
 
-23.
+25- Nothing is printed without a matching file name
 
 
-
-24.
-
-
-
-25.
-
-
-
-26.
+26- 
 
 
 
