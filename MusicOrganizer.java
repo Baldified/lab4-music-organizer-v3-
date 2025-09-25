@@ -146,15 +146,14 @@ public class MusicOrganizer
     {
         boolean validation = true;
         for(String filename : files) {
-            if(filename.contains(searchString) && validation != false) {
+            if(filename.contains(searchString)) {
                 System.out.println(filename);
+                validation = false;
             }
-            else {
-                if(filename.contains(searchString) != true) {
-                    System.out.println("No matching file names found.");
-                }
-            }
-        }
+          }
+        if(validation) {
+              System.out.println("No matching file names found.");
+          }
         }
     }
 
