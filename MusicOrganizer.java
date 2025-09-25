@@ -154,6 +154,16 @@ public class MusicOrganizer
         if(validation) {
               System.out.println("No matching file names found.");
           }
+    }
+    public void playSamplePlaylist(String searchString)
+    {
+        boolean sample = false;
+        for(String filename : files){
+            if(filename.contains(searchString)) {
+                player.playSample(filename);
+                sample = true;
+            }
         }
     }
+}
 
