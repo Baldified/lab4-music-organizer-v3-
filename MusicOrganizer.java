@@ -158,7 +158,6 @@ public class MusicOrganizer
     public void playSamplePlaylist(String searchString)
     {
         boolean samplePlayed = false;
-        //MusicPlayer player = files.get(files);
         for(String filename : files){
             if(filename.contains(searchString)) {
                 player.playSample(filename);
