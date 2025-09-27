@@ -12,6 +12,8 @@ public class MusicOrganizer
     private ArrayList<String> files;
     // A player for the music files.
     private MusicPlayer player;
+    
+    private ArrayList<Track> trackList;
         
     /**
      * Create a MusicOrganizer
@@ -163,6 +165,12 @@ public class MusicOrganizer
                 player.playSample(filename);
                 samplePlayed = true;
             }
+        }
+    }
+    public void playTrack(int index)
+    {
+        for(Track musicTrack : trackList) {
+            
         }
     }
 }
